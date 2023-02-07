@@ -1,0 +1,56 @@
+A website consists of many files: text content, code, stylesheets, media content and so on. When building a website
+assemble these files into a sensible structure on your local computer and make sure they can talk to one another, and
+get all your content looking right before you actually upload them to a server.
+
+
+Where should your website live on your computer?
+When working on a website locally on your computer, keep all the related files in a single folder that mirrors the
+published website's file structure on the server. This folder can be anywhere but put it somewhere where you can find
+it easily.
+
+1. Choose a place to store your website projects. Inside that, create a new folder called web-projects (or similar).
+    This is where all your website projects will live in.
+2. Inside that folder, create another folder to store your first website. Call it test-site (or somthing imaginative).
+
+
+An aside on casing and spacing
+We ask you to name folders and files completely in lowercase with no spaces. This is because:
+
+1. Many computers, particularly web-servers, are case-sensitive. So for example, if you put an image on your website at
+    test-site/Myimage.jpg and then in different file you try to invoke the image as test-site/myimage.jpg
+2. Browsers, web-servers and programming languages do not handle spaces consistently. For example, some systems may 
+    treat spaces in your filename as two filenames. Some servers will replace the areas in your filenames with "%20"
+    (the character code for spaces in URL), resulting all your links being broken. Its better to separate words with
+    hyphens, rather than underscores: my-file.html(right) vs my_file.html(wrong).
+
+The short answer is that you should use a hyphen for your file names. The Google search engine treats a hyphen as a word
+    separator but does not regard an underscore that way. For these reasons, it is best to get into the habit of writing 
+    your folder and file names lowercase with no spaces and with words separated by hyphens.
+
+
+
+What structure should your website have?
+The most common things we'll have on any website project we create are an index HTML file and folders to contain 
+    images, style files, and script files.
+
+1. index.html: This file generally contain your homepage content, that is, the text and images that people server
+    when they first go to your site
+2. images folder: This folder will contain all the images that you use on your site.
+3. styles folder: This folder will contain all the images that you use on your site.
+4. scripts folder: This folder will contain all the Javascript code used to add interactive functionality to your site.
+    (e.g buttons that load data when clicked)
+
+
+
+File paths
+* To link to a target file in the same directory as the invoking HTML file, just use the filname e.g my-image.jpg.
+* To reference a file in subdirectory, write the directory name in front of the path, plus a forward slash. e.generally
+    subdirectory/my-image.jpg
+* To link to a target file in the directory above the invoking html file, write two dots. So for example, 
+    if index.html was inside a subfolder of test-site and my-image.jpg was inside test-site, you could reference 
+    my-image.jpg from index.html using ../my-image.jpg.
+* You can combine these as much as you like, for example ../subdirectory/another-subdirectory/my-image.jpg.
+
+Note: The Windows file system tends to use backslashes, not forward slashes, e.g. C:\Windows. 
+    This doesn't matter in HTML — even if you are developing your website on Windows, you should still use 
+    forward slashes in your code.
