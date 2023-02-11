@@ -12,7 +12,7 @@ What tools do i actually need right now?
     https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server
 
 
-What tools do the professionals user?
+What tools do the professionals use?
     * A computer
     * A text editor. Visual Studio Code is a very good choice
     * Web browsers to test code. Firefox, Chrome, Opera, Safari are most-used browsers.
